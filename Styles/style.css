@@ -32,3 +32,39 @@ body {
     background-color: var(--white);
 }
 
+header[role="banner"] {
+    height: 669px;
+    background-image: url(../Assets/images/donation1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+}
+
+.banner-heading {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner-heading .title {
+    padding-top: 174px;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.banner-heading .subtitle {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.donate-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 11px 12px;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
