@@ -248,13 +248,62 @@ hr {
     padding-right: 300px;
 }
 
-.main-blogs>.main-subblog>article>.sec-subtitle {
-    font-size: 18px;
-    line-height: 28px;
+/* get my update sections styles */
+.get-my-update {
+    margin-block: 133px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-my-update > form {
+    width: 809px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.get-my-update>form>input[type="email"] {
+    padding: 11px 0 11px 7px;
+    background-color: var(--bg-gray);
+    border: none;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: var(--text-gray);
+}
+
+.get-my-update>form>.donate-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin: 0;
+}
+
+.get-my-update>.sec-subtitle {
+    margin-block: 33px;
+    width: 45%;
+    text-align: center;
 }
 
 
-/* get my update sections styles */
+/* footer section styles added */
+footer {
+    background-color: var(--bg-dblue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+footer h2 {
+    font-family: 'Lobster', cursive;
+    margin-bottom: 20px;
+}
 
 
 
