@@ -8,12 +8,13 @@
     --primary-color: #ff5959;
     --secondary-color: #fff4d6;
     --text-black: #121212;
-    --text-gray: #c9c9c9;
+    --text-gray: #828282;
     --bg-gray: #d9d9d9;
+    --light-gray: #fafafa;
     --bg-dblue: #0b0d17;
     --bg-lskyblue: #edf5f6;
-    --bg-lyellow: #ffeeee;
-    --bg-bred: #ffeeee;
+    --bg-lyellow: #fff4d6;
+    --bg-lred: #ffeeee;
     --white: #ffffff;
 }
 
@@ -32,6 +33,7 @@ body {
     background-color: var(--white);
 }
 
+/* styles for banner section whose elements are within header tag */
 header[role="banner"] {
     height: 669px;
     background-image: url(../Assets/images/donation1.jpg);
@@ -64,7 +66,129 @@ header[role="banner"] {
     background-color: var(--primary-color);
     color: var(--white);
     padding: 11px 12px;
+    font-weight: 600;
     border: none;
     border-radius: 5px;
     margin: 0 auto;
+}
+
+/* donate today section styles */
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+.donate-container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.sec-title {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.sec-subtitle {
+    padding: 20px 0;
+    color: var(--text-gray);
+}
+
+.donate-container > .sec-subtitle {
+    padding: 50px 100px;
+}
+
+.donate-amount {
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.amount-in-tk {
+    width: 135px;
+    height: 123px;
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    color: #787878;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount-in-tk:nth-child(2) {
+    background-color: var(--bg-lred);
+    border: 1px solid red;
+}
+
+.donate-container > a {
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+hr {
+    margin: 20px auto 30px;
+}
+
+/* donate plan section styles */
+.donate-plans-container {
+    margin-block: 130px;
+    text-align: center;
+}
+
+.donate-plans-container > .sec-subtitle {
+    margin-block: 20px;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+.list-of-planes {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.list-of-planes > a {
+    text-decoration: none;
+    color: var(--text-black);
+}
+
+.list-of-planes > a > .blog {
+    text-align: left;
+    padding: 0 23px;
+    list-style-type: none;
+    width: 450px;
+    height: 399px;
+    border-radius: 7px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.list-of-planes >a >.blog img {
+    position: absolute;
+    top: 55px;
+    left: 25px;
+}
+
+.list-of-planes > a > li.blog0 {
+    background-color: var(--bg-lskyblue);
+}
+
+.list-of-planes > a > li.blog1 {
+    background-color: var(--bg-lred);
+}
+
+.list-of-planes > a > li.blog2 {
+    background-color: var(--bg-lyellow);
+}
+
+.list-of-planes > a > .blog > article > p.about-this-blog {
+    padding: 16px 0;
+    text-align: left;
+    line-height: 24px;
+    color: var(--text-gray);
+    height: 101px;
 }
