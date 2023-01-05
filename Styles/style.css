@@ -1,0 +1,34 @@
+/* importing required fonts form google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lobster&display=swap');
+
+
+/* adding variable names to the root for later use */
+:root {
+    --primary-color: #ff5959;
+    --secondary-color: #fff4d6;
+    --text-black: #121212;
+    --text-gray: #c9c9c9;
+    --bg-gray: #d9d9d9;
+    --bg-dblue: #0b0d17;
+    --bg-lskyblue: #edf5f6;
+    --bg-lyellow: #ffeeee;
+    --bg-bred: #ffeeee;
+    --white: #ffffff;
+}
+
+/* reseting margin, padding, box-sizing for all the elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+/* setting some initial styles for the html body */
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--white);
+}
+
