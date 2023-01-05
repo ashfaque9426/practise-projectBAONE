@@ -26,6 +26,15 @@
     font-family: "Inter", sans-serif;
 }
 
+/* utility classes */
+.mt {
+    margin-top: 15px;
+}
+
+.mb {
+    margin-bottom: 15px;
+}
+
 /* setting some initial styles for the html body */
 body {
     width: 100%;
@@ -92,6 +101,8 @@ main {
 .sec-subtitle {
     padding: 20px 0;
     color: var(--text-gray);
+    font-size: 18px;
+    line-height: 28px;
 }
 
 .donate-container > .sec-subtitle {
@@ -129,6 +140,7 @@ main {
 
 hr {
     margin: 20px auto 30px;
+    opacity: 0.09;
 }
 
 /* donate plan section styles */
@@ -192,3 +204,58 @@ hr {
     color: var(--text-gray);
     height: 101px;
 }
+
+/* main blog section styles */
+.main-blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.main-blogs > .main-subblog {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.main-blogs>.main-subblog article {
+    padding-top: 50px;
+}
+
+.main-blogs > .main-subblog:last-child {
+    flex-direction: row-reverse;
+}
+
+.main-blogs>.main-subblog:first-child>figure {
+    padding-right: 250px;
+}
+
+.main-blogs>.main-subblog:last-child > article > .sec-subtitle, .main-blogs>.main-subblog:last-child>article>.sec-title, .main-subblog:last-child>article>a> .donate-btn {
+    margin-left: -250px;
+}
+
+.main-blogs > .main-subblog > figure > img {
+    width: 520px;
+    height: 499px;
+    object-fit: cover;
+}
+
+.main-blogs>.main-subblog>article {
+    width: 456px;
+}
+
+.main-blogs>.main-subblog:last-child>article {
+    padding-right: 300px;
+}
+
+.main-blogs>.main-subblog>article>.sec-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+/* get my update sections styles */
+
+
+
+
